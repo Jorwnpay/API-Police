@@ -27,11 +27,7 @@ API Police 对目标 API 运行一组验证测试，综合评估其真实性：
 
 ## 安装
 
-```bash
-pip install api-police
-```
-
-或从源码安装：
+从源码安装：
 
 ```bash
 git clone https://github.com/Jorwnpay/API-Police.git
