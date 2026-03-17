@@ -25,12 +25,21 @@ _FAMILY_KEYWORDS: dict[str, list[str]] = {
     "yi": ["yi", "01.ai"],
 }
 
-_IDENTITY_PROMPT = (
+_IDENTITY_PROMPT_EN = (
     "Please tell me your exact model name and the company that created you. "
     "Be as specific as possible (e.g. 'I am Claude 3.5 Sonnet, created by Anthropic')."
 )
 
+_IDENTITY_PROMPT_ZH = (
+    "请告诉我你的确切模型名称和创建你的公司。"
+    "请尽可能具体（例如：'我是 Claude 3.5 Sonnet，由 Anthropic 创建'）。"
+)
+
+# Combine both English and Chinese prompts for better compatibility
+_IDENTITY_PROMPT = f"{_IDENTITY_PROMPT_EN}\n\n{_IDENTITY_PROMPT_ZH}"
+
 _EVASION_PHRASES = [
+    # English phrases
     "i'm an ai",
     "i am an ai",
     "i don't have",
@@ -40,6 +49,15 @@ _EVASION_PHRASES = [
     "not allowed",
     "confidential",
     "i'm just an assistant",
+    # Chinese phrases
+    "我是一个ai",
+    "我是一个人工智能",
+    "我没有",
+    "无法透露",
+    "不能告诉",
+    "不允许",
+    "保密",
+    "我只是一个助手",
 ]
 
 
