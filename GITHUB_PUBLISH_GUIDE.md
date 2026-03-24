@@ -1,4 +1,4 @@
-# API-Police 发布到 GitHub 完整操作文档
+# API-Police 提交修改完整操作文档
 
 适用仓库：`https://github.com/Jorwnpay/API-Police/`
 
@@ -155,7 +155,3 @@ git push -u origin master
 - 重要文档已更新（README 中英文）
 - 本地测试至少跑过一次（如 `pytest -q`）
 - `git status` 确认没有误提交文件
-
----
-
-如果你希望，我可以下一步直接帮你在当前目录执行这套命令，并把推送过程中的报错（若有）一并处理掉。
